@@ -1,0 +1,11 @@
+.\objects\delay.o: Code\src\Delay.c
+.\objects\delay.o: .\Code\inc\Delay.h
+.\objects\delay.o: .\CMSIS\inc\stm32f4xx.h
+.\objects\delay.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h
+.\objects\delay.o: .\CMSIS\inc\core_cm4.h
+.\objects\delay.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\delay.o: .\CMSIS\inc\core_cmInstr.h
+.\objects\delay.o: .\CMSIS\inc\cmsis_armcc.h
+.\objects\delay.o: .\CMSIS\inc\core_cmFunc.h
+.\objects\delay.o: .\CMSIS\inc\core_cmSimd.h
+.\objects\delay.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
