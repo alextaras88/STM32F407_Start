@@ -13,9 +13,9 @@ int main ()
 	while(1)
 	{
 		GPIOD->BSRR |= GPIO_BSRR_BS_13;
-		Delay_ms(500);
+		Delay_ms(100);
 		GPIOD->BSRR |= GPIO_BSRR_BR_13;
-		Delay_ms(500);
+		Delay_ms(100);
 //		if ((GPIOA->IDR & GPIO_IDR_IDR_0) != 0)
 //			{
 //				for (i = 0; i<200000; i++) {}

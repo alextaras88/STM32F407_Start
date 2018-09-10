@@ -6,7 +6,7 @@
 
 volatile uint32_t msTicks;
 
-void SysTick_Handler (void) //Enter here every 1 ms
+void SysTick_Handler(void) //Enter here every 1 ms
 {
   msTicks++;
 }
@@ -14,21 +14,23 @@ void SysTick_Handler (void) //Enter here every 1 ms
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Delay_us                                                                                                            //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-void Delay_us(uint32_t us)
-{
-   volatile uint32_t delay = (us * (SystemCoreClock / 1000000) / 4);
+void Delay_us(uint32_t us){
+	
+   volatile uint32_t delay = (us * (SystemCoreClock / 168000) / 4);
    while (delay--);   
+	
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Delay_ms                                                                                                          //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-void Delay_ms(uint32_t dlyTicks)
-{
+void Delay_ms(uint32_t dlyTicks){
+	
   uint32_t curTicks;
   curTicks = msTicks;
   while ((msTicks - curTicks) < dlyTicks);
+	
 }
 
 
