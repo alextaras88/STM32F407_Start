@@ -11,3 +11,7 @@
 .\objects\main.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
 .\objects\main.o: .\Code\inc\Start_Init.h
 .\objects\main.o: .\Code\inc\Delay.h
+.\objects\main.o: .\Code\inc\I2C.h
+.\objects\main.o: .\Code\inc\SPI.h
+.\objects\main.o: .\Code\inc\USART.h
+.\objects\main.o: .\Code\inc\LIS3DSH.h

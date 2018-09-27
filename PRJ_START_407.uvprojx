@@ -406,6 +406,26 @@
               <FileType>1</FileType>
               <FilePath>.\Code\src\Delay.c</FilePath>
             </File>
+            <File>
+              <FileName>I2C.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Code\src\I2C.c</FilePath>
+            </File>
+            <File>
+              <FileName>SPI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Code\src\SPI.c</FilePath>
+            </File>
+            <File>
+              <FileName>USART.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Code\src\USART.c</FilePath>
+            </File>
+            <File>
+              <FileName>LIS3DSH.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Code\src\LIS3DSH.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

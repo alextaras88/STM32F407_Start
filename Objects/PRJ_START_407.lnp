@@ -3,6 +3,10 @@
 ".\objects\main.o"
 ".\objects\start_init.o"
 ".\objects\delay.o"
+".\objects\i2c.o"
+".\objects\spi.o"
+".\objects\usart.o"
+".\objects\lis3dsh.o"
 ".\objects\startup_stm32f407xx.o"
 --strict --scatter ".\Objects\PRJ_START_407.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols

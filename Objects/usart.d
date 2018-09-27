@@ -1,0 +1,11 @@
+.\objects\usart.o: Code\src\USART.c
+.\objects\usart.o: .\Code\inc\USART.h
+.\objects\usart.o: .\CMSIS\inc\stm32f4xx.h
+.\objects\usart.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h
+.\objects\usart.o: .\CMSIS\inc\core_cm4.h
+.\objects\usart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\usart.o: .\CMSIS\inc\core_cmInstr.h
+.\objects\usart.o: .\CMSIS\inc\cmsis_armcc.h
+.\objects\usart.o: .\CMSIS\inc\core_cmFunc.h
+.\objects\usart.o: .\CMSIS\inc\core_cmSimd.h
+.\objects\usart.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h

@@ -2,23 +2,35 @@
 
 int main ()
 {
-	//uint32_t i = 0;
+	
 	//uint8_t status = 0;
 		
 	RCC_Init();
-	MCO2_Init();
+	//MCO2_Init();
 	GPIO_Init();
 	Delay_Init();
 	
+	//SPI1_Init();
+	USART2_Init();
+	
+	USART2_Send_String ("STM32F4_TEST_USART\r\n0");
+	
 	while(1)
 	{
-		GPIOD->BSRR |= GPIO_BSRR_BS_13;
-		Delay_ms(100);
-		GPIOD->BSRR |= GPIO_BSRR_BR_13;
-		Delay_ms(100);
+		
+//		SPI1_CS_LOW;
+//		Spi1_Write_Data8(0x01);
+//		Spi1_Write_Data8(0x02);
+//		Spi1_Write_Data8(0x03);
+//		Spi1_Write_Data8(0x55);
+//		Spi1_Write_Data8(0x0D);
+//		SPI1_CS_HIGH;
+//		GPIOD->ODR ^= GPIO_ODR_ODR_12;
+//		Delay_ms(200);
+//		
 //		if ((GPIOA->IDR & GPIO_IDR_IDR_0) != 0)
 //			{
-//				for (i = 0; i<200000; i++) {}
+//				Delay_ms(200);
 //				if ((GPIOA->IDR & GPIO_IDR_IDR_0) != 0)
 //				{
 //					status++;
@@ -35,10 +47,10 @@ int main ()
 //				GPIO_ODR_ODR_15);
 //				GPIOD->ODR |= GPIO_ODR_ODR_12;
 //				GPIOD->ODR &= ~GPIO_ODR_ODR_14;
-//				for (i = 0; i<4000000; i++) {}
+//				Delay_ms(200);
 //				GPIOD->ODR &= ~GPIO_ODR_ODR_12;
 //				GPIOD->ODR |= GPIO_ODR_ODR_14;
-//				for (i = 0; i<4000000; i++) {}
+//				Delay_ms(200);
 //			break;
 //				
 //			case 1:
@@ -48,10 +60,10 @@ int main ()
 //				GPIO_ODR_ODR_15);
 //				GPIOD->ODR |= GPIO_ODR_ODR_13;
 //				GPIOD->ODR &= ~GPIO_ODR_ODR_15;
-//				for (i = 0; i<2000000; i++) {}
+//				Delay_ms(500);
 //				GPIOD->ODR &= ~GPIO_ODR_ODR_13;
 //				GPIOD->ODR |= GPIO_ODR_ODR_15;
-//				for (i = 0; i<2000000; i++) {}
+//				Delay_ms(500);
 //			break;
 //				
 //			case 2:
@@ -61,16 +73,16 @@ int main ()
 //				GPIO_ODR_ODR_15);
 //				GPIOD->ODR &= ~GPIO_ODR_ODR_15;
 //				GPIOD->ODR |= GPIO_ODR_ODR_12;
-//				for (i = 0; i<1000000; i++) {}
+//				Delay_ms(250);
 //				GPIOD->ODR &= ~GPIO_ODR_ODR_12;
 //				GPIOD->ODR |= GPIO_ODR_ODR_13;
-//				for (i = 0; i<1000000; i++) {}
+//				Delay_ms(250);
 //				GPIOD->ODR &= ~GPIO_ODR_ODR_13;
 //				GPIOD->ODR |= GPIO_ODR_ODR_14;
-//				for (i = 0; i<1000000; i++) {}
+//				Delay_ms(250);
 //				GPIOD->ODR &= ~GPIO_ODR_ODR_14;
 //				GPIOD->ODR |= GPIO_ODR_ODR_15;
-//				for (i = 0; i<1000000; i++) {}
+//				Delay_ms(250);
 //			break;
 //							
 //			}
