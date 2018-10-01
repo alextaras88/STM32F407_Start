@@ -1,0 +1,14 @@
+.\objects\ssd1306.o: SSD1306\ssd1306.c
+.\objects\ssd1306.o: SSD1306\ssd1306.h
+.\objects\ssd1306.o: .\CMSIS\inc\stm32f4xx.h
+.\objects\ssd1306.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h
+.\objects\ssd1306.o: .\CMSIS\inc\core_cm4.h
+.\objects\ssd1306.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ssd1306.o: .\CMSIS\inc\core_cmInstr.h
+.\objects\ssd1306.o: .\CMSIS\inc\cmsis_armcc.h
+.\objects\ssd1306.o: .\CMSIS\inc\core_cmFunc.h
+.\objects\ssd1306.o: .\CMSIS\inc\core_cmSimd.h
+.\objects\ssd1306.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
+.\objects\ssd1306.o: .\Code\inc\i2c.h
+.\objects\ssd1306.o: .\Code\inc\Delay.h
+.\objects\ssd1306.o: SSD1306\ssd1306_fonts.h

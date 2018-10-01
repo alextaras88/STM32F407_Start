@@ -15,3 +15,15 @@
 .\objects\main.o: .\Code\inc\SPI.h
 .\objects\main.o: .\Code\inc\USART.h
 .\objects\main.o: .\Code\inc\LIS3DSH.h
+.\objects\main.o: .\Code\inc\SPI.h
+.\objects\main.o: .\Code\inc\USART.h
+.\objects\main.o: .\Code\inc\Delay.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: .\SSD1306\ssd1306.h
+.\objects\main.o: .\Code\inc\i2c.h
+.\objects\main.o: .\Code\inc\Delay.h
+.\objects\main.o: .\SSD1306\ssd1306_fonts.h
+.\objects\main.o: .\Code\inc\htu21d.h
+.\objects\main.o: .\Code\inc\I2C.h
+.\objects\main.o: .\Code\inc\Delay.h

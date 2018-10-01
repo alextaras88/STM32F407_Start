@@ -14,7 +14,8 @@ void SPI1_Init(void){
 	GPIOA->PUPDR &= ~GPIO_PUPDR_PUPDR5;									// No pull-up, pull-down
 	
 	// PA6 MISO
-	GPIOA->MODER &= ~GPIO_MODER_MODER6;									// INPUT Floating
+	GPIOA->MODER &= ~GPIO_MODER_MODER6;
+  GPIOA->MODER |= GPIO_MODER_MODER6_1;								// INPUT Floating
 	GPIOA->PUPDR &= ~GPIO_PUPDR_PUPDR6;		
 	
 	// PA7 MOSI
@@ -46,31 +47,35 @@ void SPI1_Init(void){
 	
 }
 /****************************************************************************************/
-void Spi1_Write_Data8(uint8_t data){ 
+ uint8_t Spi1_transfer_8(SPI_TypeDef* SPIx, uint8_t data){ 
 	
-	while (!(SPI1->SR & SPI_SR_TXE));
+	SPI_WAIT(SPIx);
+	SPI1->DR = data;
+	SPI_WAIT(SPIx);
 	
-	SPI1->DR = data; 
-	
-	while (!(SPI1->SR & SPI_SR_RXNE));	
-	while((SPI1->SR & SPI_SR_BSY)!=0);
+	return SPIx->DR;
 	
 }
 /****************************************************************************************/
-uint8_t Spi1_Write_Read_Data8(uint8_t data){ 
+void Spi1_multi_transfer_8(SPI_TypeDef* SPIx, uint8_t* dataOUT,uint8_t* dataIN, uint16_t size){
 	
-  SPI1->CR1 &= ~SPI_CR1_DFF;	
+	uint16_t i;
 	
-	while(!(SPI1->SR & SPI_SR_TXE));
-	       
-	SPI1->DR = data;   
-	while(!(SPI1->SR & SPI_SR_RXNE));
-	data = SPI1->DR;  
-	while((SPI1->SR & SPI_SR_BSY)!=0){}
+	SPI_WAIT(SPIx);
 	
-  return data;  
+	for(i=0;i<size;i++){
+		
+		SPIx->DR = dataOUT[i];
+		SPI_WAIT(SPIx);
+		dataIN[i] = SPIx->DR;
+		
+	}
+
 }
 /****************************************************************************************/
+
+
+
 
 
 

@@ -7,6 +7,9 @@
 ".\objects\spi.o"
 ".\objects\usart.o"
 ".\objects\lis3dsh.o"
+".\objects\ssd1306.o"
+".\objects\ssd1306_fonts.o"
+".\objects\htu21d.o"
 ".\objects\startup_stm32f407xx.o"
 --strict --scatter ".\Objects\PRJ_START_407.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols

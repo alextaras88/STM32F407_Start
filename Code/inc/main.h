@@ -6,6 +6,12 @@
 #include "SPI.h"
 #include "USART.h"
 #include "LIS3DSH.h"
+#include "ssd1306.h"
+#include "htu21d.h"
+
+#include <string.h>
+#include <stdio.h>
+#include <stdint.h>
 
 
 

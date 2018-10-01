@@ -337,7 +337,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\PRJ_START_407;.\CMSIS\inc;.\Code\inc</IncludePath>
+              <IncludePath>..\PRJ_START_407;.\CMSIS\inc;.\Code\inc;.\SSD1306</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -425,6 +425,21 @@
               <FileName>LIS3DSH.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Code\src\LIS3DSH.c</FilePath>
+            </File>
+            <File>
+              <FileName>ssd1306.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SSD1306\ssd1306.c</FilePath>
+            </File>
+            <File>
+              <FileName>ssd1306_fonts.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SSD1306\ssd1306_fonts.c</FilePath>
+            </File>
+            <File>
+              <FileName>htu21d.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Code\src\htu21d.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -48,6 +48,19 @@ void USART2_Send_String (char* str){            			// Send string
 	
 }
 /****************************************************************************************/
+void USART2_MultiSend (uint8_t *chr, uint16_t size){                   				// Send char
+	
+	uint16_t i = 0;
+	
+	for(i=0;i<size;i++){
+		
+		while (!(USART2->SR & USART_SR_TC));
+		USART2->DR = (char)chr[i];
+	
+	}
+	
+}
+/****************************************************************************************/
 void USART2_IRQHandler (void){ 										    // IRQ USART2
 	                  
 	if (USART2->SR & USART_CR1_RXNEIE){            			// IRQ USART2_RX
